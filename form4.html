@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let enqId = 1;
+
+        function incrementFormId() {
+  
+        formId++;
+        document.getElementById("enq_Id").textContent = `3.Enquiry ID: ${enqId}`;
+}
+      </script>
+</head>
+<body>
+    <h1>New Project</h1>
+    <div class="form-container">
+        <form id="form">
+            <div class="form-control">
+                <label for="name" id="label-name"><b>1. Name of the Project</b> </label>
+                <br>
+                <input type="text"
+                       id="name"
+                       placeholder="Name" />
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="locat" id="locat"><b>2. Enter the Location:</b> </label>
+                <br>
+                <input type="text"
+                       id="locat"
+                       placeholder="Location" />
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="formId" id="form_Id"><b>3. Form ID: 1 </b> </label>
+                
+            </div>
+
+            <br>
+            
+            <div class="form-control">
+                <label for="unit-num" id="unit-num"><b>4. Total Unit Quantity:</b> </label>
+                <br>
+                <input type="text"
+                       id="uni_num"
+                       placeholder="Total Number of Units" />
+            </div>
+            
+            <br>
+            <div class="form-control">
+                <label for="amenities" id="amenities"><b>5. Enter the amenities:</b> </label>
+                <br>
+                <input type="text"
+                       id="amenities"
+                       placeholder="Amenities" />
+            </div>
+            <br>
+            <div class="form-control">
+            <label for="Product"><b>7. Products:</b></label>
+            <br>
+            <select id="Product" name="Product">
+            <option value="Default">Default</option>
+            <option value="1BHK">1BHK</option>
+            <option value="2BHK" >2BHK</option>
+            <option value="3BHK">3BHK</option>
+            <option value="4BHK">4BHK</option>
+            </select>
+            </div>
+
+            <br>
+            
+            <button id="submitBtn" onclick="incrementFormId()">Submit</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let enqId = 1;
+
+        function incrementFormId() {
+  
+        formId++;
+        document.getElementById("enq_Id").textContent = `3.Enquiry ID: ${enqId}`;
+}
+      </script>
+</head>
+<body>
+    <h1>Enquiry Page</h1>
+    <div class="form-container">
+        <form id="form">
+            <div class="form-control">
+                <label for="name" id="label-name"><b>1. Enter your Name</b> </label>
+                <br>
+                <input type="text"
+                       id="name"
+                       placeholder="Name" />
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="custId" id="cust_Id"><b>2. Enter the Customer ID:</b> </label>
+                <br>
+                <input type="text"
+                       id="cust_Id"
+                       placeholder="Customer-Id" />
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="enqId" id="enq_Id"><b>3.Enquiry ID: 1 </b> </label>
+                
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="con-num" id="con-num"><b>4. Your Contact Number:</b> </label>
+                <br>
+                <input type="text"
+                       id="con_num"
+                       placeholder="Phone Number" />
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="cust-mail" id="cust-mail"><b>5. Your Email Id:</b> </label>
+                <br>
+                <input type="text"
+                       id="cust-mail"
+                       placeholder="Email-ID" />
+            </div>
+            <br>
+            <div class="form-control">
+            <label for="Project"><b>6. Choose Project</b></label>
+            <br>
+            <select id="Project" name="Choose a Project">
+            <option value="project1">Project 1</option>
+            <option value="project2">Project 2</option>
+            <option value="project3">Project 3</option>
+            </select>
+            </div>
+            <br>
+            <div class="form-control">
+            <label for="Intensity"><b>7. What's the Intesity?</b></label>
+            <br>
+            <select id="Intensity" name="Intensity">
+            <option value="Default">Default</option>
+            <option value="Cold" data-color="#f0f0f0">Cold</option>
+            <option value="Warm">Warm</option>
+            <option value="Hot">Hot</option>
+            </select>
+            </div>
+
+            <br>
+            
+            <div class="form-control">
+            <label for="visitDate"><b>8. Date of Contact</b></label>
+            <input type="datetime-local" id="visitDate" name="visitDate">
+            </div>
+
+            <br>
+            <div class="form-control">
+            <label for="Status"><b>8. Status of the Project?</b></label>
+            <br>
+            <select id="Status" name="Status">
+            <option value="Default">Default</option>
+            <option value="Open">Open</option>
+            <option value="Completed">Completed</option>
+            <option value="Converted">Converted</option>
+            </select>
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="notes" id="notes"><b>9. Notes if any</b> </label>
+                <br>
+                <input type="text"
+                       id="notes"
+                       placeholder="Notes"/>
+            </div>
+            <button id="submitBtn" onclick="incrementFormId()">Submit</button>
+    </div>
+</body>
+</html>

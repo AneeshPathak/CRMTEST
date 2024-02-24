@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let enqId = 1;
+
+        function incrementFormId() {
+  
+        formId++;
+        document.getElementById("enq_Id").textContent = `3.Enquiry ID: ${enqId}`;
+}
+      </script>
+</head>
+<body>
+    <h1>New Customer</h1>
+    <div class="form-container">
+        <form id="form">
+            <div class="form-control">
+                <label for="name" id="label-name"><b>1. Name of the Customer:</b> </label>
+                <br>
+                <input type="text"
+                       id="name"
+                       placeholder="Name" />
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="con_num" id="con_num"><b>2. Enter the Phone Number:</b> </label>
+                <br>
+                <input type="text"
+                       id="con_num"
+                       placeholder="Phone Number" />
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="formId" id="form_Id"><b>3. Customer ID: 1 </b> </label>
+                
+            </div>
+
+            <br>
+            
+            <div class="form-control">
+                <label for="email_id" id="email_id"><b>4. Enter the Email-ID:</b> </label>
+                <br>
+                <input type="text"
+                       id="email_id"
+                       placeholder="Email-ID" />
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="locat" id="locat"><b>5. Enter the Location:</b> </label>
+                <br>
+                <input type="text"
+                       id="locat"
+                       placeholder="Location" />
+            </div>
+
+            <br>
+            <div class="form-control">
+                <label for="com_name" id="com_name"><b>6. Enter the Company Name:</b> </label>
+                <br>
+                <input type="text"
+                       id="con_name"
+                       placeholder="Company Name" />
+            </div>
+
+
+            <br>
+            <div class="form-control">
+                <label for="work_area" id="work_area"><b>5. Enter the work area:</b> </label>
+                <br>
+                <input type="text"
+                       id="work_area"
+                       placeholder="Work Area" />
+            </div>
+            
+            <br>
+            
+            <button id="submitBtn" onclick="incrementFormId()">Submit</button>
+    </div>
+</body>
+</html>

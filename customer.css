@@ -1,0 +1,36 @@
+
+@media (max-width: 768px) {
+    .panel {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sort-options {
+        margin-bottom: 15px;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .my-container {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px auto; /* Centers the container horizontally */
+        background-color: #f0f0f0;
+    }
+}

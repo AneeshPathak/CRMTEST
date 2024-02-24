@@ -1,0 +1,48 @@
+
+
+.big-container {
+    width: 90%; 
+    max-width: 1200px; 
+    height: 800px;
+    margin: 0 auto; 
+    margin-top: 30px;
+    background-color: #020716; 
+    border: 1px solid #b7ec07; 
+    border-width: 3px;
+    padding: 20px; 
+  }
+  table {
+    border-collapse: collapse; 
+    width: 100%; 
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center; 
+    background-color: rgb(147, 230, 230);
+  }
+  
+  th {
+    background-color: #0edce3; 
+    border-width: 4px;
+    border-color: #da5c18;
+  }
+.sort-options.hover{
+    background: #e58383
+}
+
+#addRowBtn {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 0%;
+    margin-left: 88%;
+    margin-bottom: 20px;
+  }
+  #addRowBtn.hover{
+    background-color: #4CAF50;
+  }
